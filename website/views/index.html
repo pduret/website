@@ -1,0 +1,23 @@
+<html>
+<head>
+	<link href="/css/bootstrap.css" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+ 
+<body>
+ <h1>Blog!</h1>
+ 
+{{#each entries}}
+    <p>
+        <a href="/personne/{{id}}">{{title}}</a><br/>
+        Published: {{published}}
+    </p>
+{{/each}}
+<footer>
+<p>
+    <a href="/">Home</a> ~ <a href="/about">About Me</a> ~ <a href="/article">Some Article</a>
+</p>
+</footer>
+ 
+</body>
+</html>
