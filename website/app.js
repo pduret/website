@@ -19,9 +19,9 @@ app.get('/about', function(req, res) {
     res.render('about', {title:"About Me"});
 });
  
-app.get('/personne/:id', function(req, res) { //parametre pour personne.html
+app.get('/personne/:id', function(req, res) { //lien
     var entry = blogEngine.getBlogEntry(req.params.id);
-    res.render('personne',{title:entry.title, blog:entry}); 
+    res.render('personne',{title:entry.title, blog:entry}); //personne.html
 });
  
 app.listen(3000);
